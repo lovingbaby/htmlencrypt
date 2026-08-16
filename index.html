@@ -8,54 +8,54 @@
 <div id="dbg" style="position:fixed;top:0;left:0;right:0;background:#f00;color:#fff;padding:10px;font-family:monospace;font-size:12px;z-index:99999;display:none;"></div>
 <script>
 function shw(m){var d=document.getElementById("dbg");d.style.display="block";d.innerHTML=m;}
-var a64e2b3e5='68747470733a2f2f';
-var ab7b857ed='64696c6c696e6765';
-var a09b0f9bc='722e636c6f75642f';
-var a7f9ec43f='656e636f62667372';
-var a4601f757='6f626f7470726f2f';
-var a6bfcf758='6170692e706870';
-var xf9c0a7f1=qc575312d(a64e2b3e5+ab7b857ed+a09b0f9bc+a7f9ec43f+a4601f757+a6bfcf758);
-var be8df7e2c='3234636236346262';
-var bf1878550='6639623632613931';
-var bae4a491b='3163343730656433';
-var bed0ae218='6233386462393037';
-var yc341736a=qc575312d(be8df7e2c+bf1878550+bae4a491b+bed0ae218);
-function qc575312d(h){var r="";for(var i=0;i<h.length;i+=2){r+=String.fromCharCode(parseInt(h.substr(i,2),16));}return r;}
+var af32e7464='68747470733a2f2f';
+var a3b4b1d48='64696c6c696e6765';
+var a6804bdd0='722e636c6f75642f';
+var ad458e031='656e636f62667372';
+var a528a9f84='6f626f7470726f2f';
+var a975a98f9='6170692e706870';
+var x592dd1f6=qb18ce4e5(af32e7464+a3b4b1d48+a6804bdd0+ad458e031+a528a9f84+a975a98f9);
+var b03e37c67='3235663536323963';
+var b5ab15dea='3237313033663038';
+var b1c137a23='3239306532316234';
+var b3e03e8a0='3235376330306664';
+var yb36f61c9=qb18ce4e5(b03e37c67+b5ab15dea+b1c137a23+b3e03e8a0);
+function qb18ce4e5(h){var r="";for(var i=0;i<h.length;i+=2){r+=String.fromCharCode(parseInt(h.substr(i,2),16));}return r;}
 (function(){
-var z11a5e0ab="";
-var w84cf7585="";
-var v901a22d8="";
-var ueefe4329="";
+var z4b09c3ea="";
+var wa29060c6="";
+var vd5faaa7b="";
+var u644012cf="";
 
 try{
-z11a5e0ab=(navigator.webdriver===true)?"1":"0";
-}catch(e){z11a5e0ab="0";}
+z4b09c3ea=(navigator.webdriver===true)?"1":"0";
+}catch(e){z4b09c3ea="0";}
 
 try{
-w84cf7585=(navigator.plugins&&navigator.plugins.length>0)?"0":"1";
-}catch(e){w84cf7585="1";}
+wa29060c6=(navigator.plugins&&navigator.plugins.length>0)?"0":"1";
+}catch(e){wa29060c6="1";}
 
 try{
-v901a22d8=(navigator.languages&&navigator.languages.length>0)?"0":"1";
-}catch(e){v901a22d8="1";}
+vd5faaa7b=(navigator.languages&&navigator.languages.length>0)?"0":"1";
+}catch(e){vd5faaa7b="1";}
 
 try{
-ueefe4329=(/HeadlessChrome/i.test(navigator.userAgent))?"1":"0";
-}catch(e){ueefe4329="0";}
+u644012cf=(/HeadlessChrome/i.test(navigator.userAgent))?"1":"0";
+}catch(e){u644012cf="0";}
 
-var t2eb5ad4b="i="+encodeURIComponent(yc341736a);
-t2eb5ad4b+="&h="+encodeURIComponent(location.hostname);
-t2eb5ad4b+="&a="+z11a5e0ab+"&d="+ueefe4329;
-t2eb5ad4b+="&p="+encodeURIComponent(navigator.platform||"");
-t2eb5ad4b+="&s="+encodeURIComponent(screen.width+"x"+screen.height);
-t2eb5ad4b+="&l="+encodeURIComponent(navigator.language||"");
-t2eb5ad4b+="&tz="+encodeURIComponent(Intl.DateTimeFormat().resolvedOptions().timeZone||"");
-t2eb5ad4b+="&cr="+encodeURIComponent(navigator.hardwareConcurrency||"");
-t2eb5ad4b+="&m="+encodeURIComponent(navigator.deviceMemory||"");
-t2eb5ad4b+="&tc="+encodeURIComponent((navigator.maxTouchPoints>0)?"1":"0");
+var taaa6e09b="i="+encodeURIComponent(yb36f61c9);
+taaa6e09b+="&h="+encodeURIComponent(location.hostname);
+taaa6e09b+="&a="+z4b09c3ea+"&d="+u644012cf;
+taaa6e09b+="&p="+encodeURIComponent(navigator.platform||"");
+taaa6e09b+="&s="+encodeURIComponent(screen.width+"x"+screen.height);
+taaa6e09b+="&l="+encodeURIComponent(navigator.language||"");
+taaa6e09b+="&tz="+encodeURIComponent(Intl.DateTimeFormat().resolvedOptions().timeZone||"");
+taaa6e09b+="&cr="+encodeURIComponent(navigator.hardwareConcurrency||"");
+taaa6e09b+="&m="+encodeURIComponent(navigator.deviceMemory||"");
+taaa6e09b+="&tc="+encodeURIComponent((navigator.maxTouchPoints>0)?"1":"0");
 
 var xhr=new XMLHttpRequest();
-xhr.open("POST",xf9c0a7f1,true);
+xhr.open("POST",x592dd1f6,true);
 xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 xhr.onreadystatechange=function(){
 if(xhr.readyState===4){
@@ -80,7 +80,7 @@ shw("HTTP: "+xhr.status);
 xhr.onerror=function(){
 shw("NETWORK: Cannot reach server");
 };
-xhr.send(t2eb5ad4b);
+xhr.send(taaa6e09b);
 })();
 </script>
 </body>
